@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empathy - Tour and Transfer</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title" data-key="helplineTitle">For Further Inquires :</p>
+
+            <p class="helpline-number">+39 331 170 3702</p>
+          </div>
+
+        </a>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.svg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+
+
+
+
+
+
+          <div class="language-selector" onclick="this.classList.toggle('open')">
+            <div class="flag-bubble">
+              <!-- Bandiera corrente: per default, italiana -->
+              <span role="img" aria-label="Bandiera italiana">🇮🇹</span>
+            </div>
+            <button class="dropdown-toggle" aria-label="Cambia lingua">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#" data-lang="it" data-flag="🇮🇹">Italiano</a>
+              <a href="#" data-lang="en" data-flag="🇬🇧">English</a>
+              <a href="#" data-lang="es" data-flag="🇪🇸">Español</a>
+              <a href="#" data-lang="fr" data-flag="🇫🇷">Français</a>
+            </div>
+          </div>
+          
+
+          
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+                <ul class="navbar-list">
+
+                  <li>
+                    <a href="index.html#home" class="navbar-link"  data-key="navHome" data-nav-link>home</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="navbar-link"  data-key="navAbout" data-nav-link>about us</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#destination" class="navbar-link"  data-key="navDestination"data-nav-link>destination</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#package" class="navbar-link"  data-key="navPackages" data-nav-link>packages</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#gallery" class="navbar-link"  data-key="navGallery" data-nav-link>gallery</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#contact" class="navbar-link"  data-key="navContact" data-nav-link>contact us</a>
+                  </li>
+                  <li>
+                    <a href="index.html#servizi" class="navbar-link"  data-key="navService" data-nav-link>servizi</a>
+                  </li>
+
+                </ul>
+
+              </nav>
+
+              <button class="btn btn-primary" data-key="navBookNow" onclick="window.open('https://wa.me/393311703702', '_blank');">
+                Book Now
+              </button>
+        
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+          <!-- Titolo dinamico -->
+          <h2 class="h1 hero-title" data-key="heroTitle">Travel with Empathy</h2>
+      
+          <!-- Descrizione dinamica -->
+          <p class="hero-text" data-key="heroDescription">
+            Empathy is your trusted tour and transfer agency. We offer unique travel experiences, reliable transfers, and personalized tours to help you discover the best of every destination, ensuring comfort and safety every step of the way.
+          </p>
+      
+          <div class="btn-group">
+            <button class="btn btn-primary" data-key="learnMore" onclick="window.location.href='#contact'">Taxi</button>
+            <button class="btn btn-secondary" data-key="bookNow">Book now</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+            <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="pompei">
+        <div class="container">
+          <header class="section-header">
+            <h3 class="section-subtitle" data-key="pompeiSectionSubtitle">
+              Tour e Attività a Pompei
+            </h3>
+            <h2 class="section-title" data-key="pompeiSectionTitle">
+              Esplora l'Antica Pompei
+            </h2>
+          </header>
+          <article class="section-description">
+            <p class="section-text" data-key="pompeiSectionText">
+              Vivi l'emozione di immergerti nella storia di Pompei, visitando rovine antiche e scoprendo la vita quotidiana di un tempo passato.
+            </p>
+          </article>
+          <ul class="package-list">
+            
+
+            <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_amalfi.jpg" alt="Pompei e Costiera Amalfitana" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiAmalfiTitle">
+                      Pompei e Costiera Amalfitana
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiAmalfiText">
+                      Immergiti nella cultura italiana con un tour che combina la storia di Pompei con la bellezza della Costiera Amalfitana.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">10H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Costiera Amalfitana</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(30 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €550 - €1.100
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiAmalfiButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_museo.jpg" alt="Pompei e Museo Archeologico di Napoli" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiMuseoTitle">
+                      Pompei e Museo Archeologico di Napoli
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiMuseoText">
+                      Scopri i tesori dell'antica Roma con un tour che include le rovine di Pompei e le incredibili collezioni del Museo Archeologico di Napoli.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">8H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Napoli</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(20 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €360
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiMuseoButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              
+
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_ercolano.jpg" alt="Pompei ed Ercolano" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiErcolanoTitle">
+                      Pompei ed Ercolano
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiErcolanoText">
+                      Scopri due città antiche perfettamente conservate dopo l'eruzione del Vesuvio del 79 d.C. in un affascinante viaggio nel passato.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">8H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Ercolano</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(18 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €400
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiErcolanoButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+              
+
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_vesuvio.jpg" alt="Pompei e Vesuvio" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiVesuvioTitle">
+                      Pompei e Vesuvio
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiVesuvioText">
+                      Esplora le meraviglie di Pompei e sali sulla cima del Vesuvio per una vista mozzafiato sul Golfo di Napoli.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">8H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Vesuvio</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(22 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €400
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiVesuvioButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              
+
+
+
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_sorrento.jpg" alt="Pompei e Sorrento" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiSorrentoTitle">
+                      Pompei e Sorrento
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiSorrentoText">
+                      Visita la storica città di Pompei e poi rilassati nel meraviglioso paesaggio di Sorrento, tra limoneti e vista mare.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">8H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Sorrento</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(23 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €400
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiSorrentoButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_halfday.jpg" alt="Pompei Mezza Giornata" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiHalfDayTitle">
+                      Pompei Mezza Giornata
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiHalfDayText">
+                      Scopri Pompei in un tour breve ma intenso, perfetto per chi ha poco tempo ma vuole esplorare le rovine più famose d’Italia.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">4H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(15 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €300
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiHalfDayButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_ercolano_vesuvio.jpg" alt="Pompei, Ercolano e Vesuvio" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiErcolanoVesuvioTitle">
+                      Pompei, Ercolano e Vesuvio
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiErcolanoVesuvioText">
+                      Visita i due siti archeologici meglio conservati al mondo e sali sul Vesuvio per godere di un panorama spettacolare.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">10H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Ercolano, Vesuvio</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(28 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €500
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiErcolanoVesuvioButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              
+
+
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_vesuvio_wine.jpg" alt="Pompei, Vesuvio e Degustazione di Vini" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiVesuvioWineTitle">
+                      Pompei, Vesuvio e Degustazione di Vini
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiVesuvioWineText">
+                      Un tour che unisce storia, natura e sapori: visita Pompei, sali sul Vesuvio e concludi la giornata con una degustazione di vini locali.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">9H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Vesuvio</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(24 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €400
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiVesuvioWineButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              
+
+
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img src="./assets/images/pompei_vesuvio_wine_premium.jpg" alt="Pompei, Vesuvio e Degustazione di Vini Premium" loading="lazy">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title" data-key="tourPompeiVesuvioWinePremiumTitle">
+                      Pompei, Vesuvio e Degustazione di Vini Premium
+                    </h3>
+                    <p class="card-text" data-key="tourPompeiVesuvioWinePremiumText">
+                      Un'esperienza esclusiva che combina la storia di Pompei, la vista mozzafiato dal Vesuvio e una degustazione di vini pregiati in una cantina locale.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">9H</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Pompei, Vesuvio</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(26 recensioni)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">
+                      €500
+                      <span data-key="perPerson">/ per gruppo</span>
+                    </p>
+                    <button class="btn btn-secondary" data-key="tourPompeiVesuvioWinePremiumButton">
+                      Prenota Ora
+                    </button>
+                  </div>
+                </div>
+              </li>
+          </ul>
+                
+        </div>
+    </section>
+
+              
+              
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a>
+
+          <p class="footer-text">
+            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
+            at
+            perferendis, pretium, aenean aut ultrices.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>3146 Koontz, California</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="">Empathy</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
