@@ -139,24 +139,29 @@
                   </li>
 
                   <li>
-                    <a href="#" class="navbar-link"  data-key="navAbout" data-nav-link>about us</a>
+                    <a href="#search" class="navbar-link"  data-nav-link>Transfer</a>
                   </li>
 
                   <li>
-                    <a href="#destination" class="navbar-link"  data-key="navDestination"data-nav-link>destination</a>
-                  </li>
-
-                  <li>
-                    <a href="#package" class="navbar-link"  data-key="navPackages" data-nav-link>packages</a>
-                  </li>
-
-                  <li>
-                    <a href="#gallery" class="navbar-link"  data-key="navGallery" data-nav-link>gallery</a>
+                    <a href="#destination" class="navbar-link"  data-key="navPackages"data-nav-link>destination</a>
                   </li>
 
                   <li>
                     <a href="#contact" class="navbar-link"  data-key="navContact" data-nav-link>contact us</a>
                   </li>
+
+                  <li>
+                    <a href="#package" class="navbar-link"  data-key="navDestination" data-nav-link>packages</a>
+                  </li>
+
+
+
+
+
+                  <li>
+                    <a href="#gallery" class="navbar-link"  data-key="navAbout" data-nav-link>about us</a>
+                  </li>
+
                   <li>
                     <a href="#" class="navbar-link"  data-key="navService" data-nav-link>servizi</a>
                   </li>
@@ -211,13 +216,20 @@
         - #TOUR SEARCH
     -->
 
-      <section class="tour-search">
+      <section class="tour-search" id="search">
         <div class="container">
 
           <form action="" class="tour-search-form">
 
             <div class="input-wrapper">
-              <label for="destination" class="input-label">Search Destination*</label>
+              <label for="destination" class="input-label">Partenza*</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
+              class="input-field">
+          </div>
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Destinazione*</label>
 
               <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
                 class="input-field">
@@ -230,16 +242,12 @@
             </div>
 
             <div class="input-wrapper">
-              <label for="checkin" class="input-label">Checkin Date**</label>
+              <label for="checkin" class="input-label"><Data></Data>Data Partenza**</label>
 
               <input type="date" name="checkin" id="checkin" required class="input-field">
             </div>
 
-            <div class="input-wrapper">
-              <label for="checkout" class="input-label">Checkout Date*</label>
 
-              <input type="date" name="checkout" id="checkout" required class="input-field">
-            </div>
 
             <button type="submit" class="btn btn-secondary">Inquire now</button>
 
@@ -261,7 +269,7 @@
       
           <p class="section-subtitle" data-key="sectionSubtitle">Esplora luoghi incantevoli</p>
       
-          <h2 class="h2 section-title" data-key="sectionTitle">Destinazioni Popolari</h2>
+          <h2 class="h2 section-title" data-key="sectionTitle">Tour Popolari</h2>
       
           <p class="section-text" data-key="sectionText">
             Scopri i luoghi incantevoli che offrono una combinazione unica di storia, cultura e paesaggi mozzafiato.

@@ -178,10 +178,10 @@ const translations = {
     fr: "à propos"
   },
   navDestination: {
-    it: "destinazione",
-    en: "destination",
-    es: "destino",
-    fr: "destination"
+    it: "Tour",
+    en: "Tour",
+    es: "Tour",
+    fr: "Tour"
   },
   navPackages: {
     it: "pacchetti",
