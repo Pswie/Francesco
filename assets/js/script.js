@@ -94,10 +94,10 @@ const translations = {
     fr: "Découvrez des lieux enchanteurs"
   },
   sectionTitle: {
-    it: "Destinazioni Popolari",
-    en: "Popular Destinations",
-    es: "Destinos Populares",
-    fr: "Destinations Populaires"
+    it: "Tour Popolari",
+    en: "Popular Tour",
+    es: "Tour Populares",
+    fr: "Tour Populaires"
   },
   sectionText: {
     it: "Scopri i luoghi incantevoli che offrono una combinazione unica di storia, cultura e paesaggi mozzafiato. Ogni destinazione racconta una storia diversa, invitandoti a vivere un'esperienza indimenticabile.",
@@ -160,10 +160,10 @@ const translations = {
     fr: "Explorez la splendide Côte Amalfitaine, avec ses paysages époustouflants et ses villages pittoresques, idéale pour des vacances inoubliables."
   },
   buttonText: {
-    it: "Altre destinazioni",
-    en: "More Destinations",
-    es: "Más Destinos",
-    fr: "Plus de Destinations"
+    it: "Altri Tour",
+    en: "More Tour",
+    es: "Más Tour",
+    fr: "Plus de Tour"
   },
   navHome: {
     it: "home",
@@ -343,6 +343,77 @@ const translations = {
       fr: "Contactez-Nous Maintenant!"
     },
 
+
+
+     // Chiavi per i placeholder dei form
+     labelDeparture: {
+      it: "Partenza*",
+      en: "Departure*",
+      es: "Salida*",
+      fr: "Départ*"
+    },
+    labelDestination: {
+      it: "Destinazione*",
+      en: "Destination*",
+      es: "Destino*",
+      fr: "Destination*"
+    },
+    labelPeople: {
+      it: "Numero di Persone*",
+      en: "Number of People*",
+      es: "Número de personas*",
+      fr: "Nombre de personnes*"
+    },
+    labelCheckin: {
+      it: "Data Partenza**",
+      en: "Departure Date**",
+      es: "Fecha de Salida**",
+      fr: "Date de Départ**"
+    },
+    labelDepartureTime: {
+      it: "Ora Partenza**",
+      en: "Departure Time**",
+      es: "Hora de Salida**",
+      fr: "Heure de Départ**"
+    },
+    // Placeholder degli input
+    placeholderDeparture: {
+      it: "Inserisci Partenza",
+      en: "Enter Departure",
+      es: "Ingrese Salida",
+      fr: "Entrez Départ"
+    },
+    placeholderDestination: {
+      it: "Inserisci Destinazione",
+      en: "Enter Destination",
+      es: "Ingrese Destino",
+      fr: "Entrez Destination"
+    },
+    placeholderPeople: {
+      it: "Inserisci numero di persone",
+      en: "Enter Number of People",
+      es: "Ingrese número de personas",
+      fr: "Entrez le nombre de personnes"
+    },
+    placeholderCheckin: {
+      it: "Seleziona Data Partenza",
+      en: "Select Departure Date",
+      es: "Selecciona Fecha de Salida",
+      fr: "Sélectionnez la date de départ"
+    },
+    placeholderDepartureTime: {
+      it: "Seleziona Ora Partenza",
+      en: "Select Departure Time",
+      es: "Selecciona Hora de Salida",
+      fr: "Sélectionnez l'heure de départ"
+    },
+    // Bottone del form
+    inquireNow: {
+      it: "Richiedi Informazioni",
+      en: "Inquire Now",
+      es: "Solicitar información",
+      fr: "Demandez maintenant"
+    },
     // Sezione Tour Pompei
  
       // Sezione Tour Pompei
@@ -553,20 +624,23 @@ const translations = {
   };
 
 
-// Funzione per aggiornare i testi in base alla lingua scelta
-function updateLanguage(lang) {
-  // Per ogni elemento con l'attributo data-key, aggiorna il contenuto
-  document.querySelectorAll('[data-key]').forEach(el => {
-    const key = el.getAttribute('data-key');
-    if (translations[key] && translations[key][lang]) {
-      el.textContent = translations[key][lang];
-    }
-  });
-  localStorage.setItem('language', lang);
-  // Aggiorna la bolla con l'immagine della bandiera
-  document.querySelector('.flag-bubble').innerHTML = `<img src="${flagUrls[lang]}" alt="Bandiera" style="width:24px; height:auto;">`;
-}
-
+  function updateLanguage(lang) {
+    // Aggiorna testi e placeholder
+    document.querySelectorAll('[data-key]').forEach(el => {
+      const key = el.getAttribute('data-key');
+      if (translations[key] && translations[key][lang]) {
+        // Se l'elemento è un input o una textarea, aggiorna il placeholder
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+          el.placeholder = translations[key][lang];
+        } else {
+          el.textContent = translations[key][lang];
+        }
+      }
+    });
+    localStorage.setItem('language', lang);
+    // Aggiorna la bandiera nel bubble
+    document.querySelector('.flag-bubble').innerHTML = `<img src="${flagUrls[lang]}" alt="Bandiera" style="width:24px; height:auto;">`;
+  }
 
 // Listener per il cambio lingua dal menu
 document.querySelectorAll('.dropdown-menu a').forEach(link => {
@@ -587,6 +661,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+document.querySelector('.tour-search-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Previene il comportamento predefinito del form
+  
+  // Recupera e "trimm" i valori dei campi
+  const departure = document.getElementById('departure').value.trim();
+  const destination = document.getElementById('destination').value.trim();
+  const people = document.getElementById('people').value.trim();
+  const checkin = document.getElementById('checkin').value.trim();
+  const departureTime = document.getElementById('departureTime').value.trim();
+  
+  // Controlla se tutti i campi sono compilati
+  if (!departure || !destination || !people || !checkin || !departureTime) {
+    alert("Please fill out all the fields before sending your inquiry.");
+    return;
+  }
+  
+  // Recupera la lingua corrente, default "it" se non è stata impostata
+  const lang = localStorage.getItem('language') || 'it';
+  
+  // Messaggio precompilato in base alla lingua scelta
+  const messageTemplates = {
+    it: `Ciao, sono interessato ad prenotare un servizio di transfer. Partirò da ${departure} e arriverò a ${destination}. Viaggeranno con me ${people} persone. La data di partenza è ${checkin} e l'orario previsto è ${departureTime}. Grazie per l'assistenza.`,
+    en: `Hello, I am interested in booking a transfer service. I will be departing from ${departure} and heading towards ${destination}. There will be ${people} people traveling with me. Our planned departure date is ${checkin} and we intend to leave at ${departureTime}. Thank you for your assistance.`,
+    es: `Hola, estoy interesado en reservar un servicio de transfer. Saldré desde ${departure} y me dirigiré hacia ${destination}. Viajarán conmigo ${people} personas. La fecha de salida es ${checkin} y la hora prevista es ${departureTime}. Gracias por su ayuda.`,
+    fr: `Bonjour, je suis intéressé par la réservation d'un service de transfert. Je partirai de ${departure} et me dirigerai vers ${destination}. Il y aura ${people} personnes voyageant avec moi. La date de départ prévue est le ${checkin} et l'heure de départ est ${departureTime}. Merci pour votre aide.`
+  };
+  
+  const message = messageTemplates[lang];
+  
+  // Inserisci il tuo numero WhatsApp in formato internazionale (senza il "+")
+  const whatsappNumber = "393311703702"; 
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  
+  // Apre WhatsApp in una nuova scheda
+  window.open(whatsappUrl, '_blank');
+});
 
 
 
