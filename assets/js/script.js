@@ -184,10 +184,10 @@ const translations = {
     fr: "Tour"
   },
   navPackages: {
-    it: "pacchetti",
-    en: "packages",
-    es: "paquetes",
-    fr: "forfaits"
+    it: "prenotazioni",
+    en: "bookings",
+    es: "reservas",
+    fr: "réservations"
   },
   navGallery: {
     it: "galleria",
