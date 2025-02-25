@@ -881,6 +881,76 @@ const translations = {
         fr: "Book Now" // oppure "Réservez maintenant"
       },
       
+      footerEmpathyText: {
+        it: "Viaggiare non è solo visitare luoghi, ma comprendere le storie, le emozioni e le vite di chi li abita. Ogni destinazione è un'opportunità per crescere, connettersi e vedere il mondo con occhi più empatici.",
+        en: "Travel is not just about visiting places, but about understanding stories, emotions, and the lives of those who live there. Each destination is an opportunity to grow, connect, and see the world with more empathy.",
+        es: "Viajar no es solo visitar lugares, sino comprender historias, emociones y las vidas de quienes los habitan. Cada destino es una oportunidad para crecer, conectarse y ver el mundo con más empatía.",
+        fr: "Voyager, ce n'est pas seulement visiter des lieux, mais comprendre les histoires, les émotions et les vies de ceux qui y vivent. Chaque destination est une opportunité de grandir, de se connecter et de voir le monde avec plus d'empathie."
+      },
+      
+      footerQuote: {
+        it: "Ogni viaggio è un incontro, ogni incontro è un'opportunità.",
+        en: "Every journey is a meeting, every meeting is an opportunity.",
+        es: "Cada viaje es un encuentro, cada encuentro es una oportunidad.",
+        fr: "Chaque voyage est une rencontre, chaque rencontre est une opportunité."
+      },
+      
+      footerContactTitle: {
+        it: "Contattaci",
+        en: "Contact Us",
+        es: "Contáctanos",
+        fr: "Contactez-nous"
+      },
+      
+      footerContactText: {
+        it: "Sentiti libero di contattarci per qualsiasi informazione!",
+        en: "Feel free to contact us for any information!",
+        es: "¡No dudes en contactarnos para cualquier información!",
+        fr: "N'hésitez pas à nous contacter pour toute information!"
+      },
+      
+      footerNewsletterText: {
+        it: "Iscriviti alla nostra newsletter per ricevere aggiornamenti e novità!",
+        en: "Subscribe to our newsletter for updates and news!",
+        es: "Suscríbete a nuestro boletín para recibir actualizaciones y noticias!",
+        fr: "Abonnez-vous à notre newsletter pour recevoir des mises à jour et des actualités!"
+      },
+      
+      footerNewsletterPlaceholder: {
+        it: "Inserisci la tua email",
+        en: "Enter your email",
+        es: "Ingresa tu correo electrónico",
+        fr: "Entrez votre email"
+      },
+      
+      footerSubscribeButton: {
+        it: "Iscriviti",
+        en: "Subscribe",
+        es: "Suscribirse",
+        fr: "S'abonner"
+      },
+      
+      footerPrivacyPolicy: {
+        it: "Privacy Policy",
+        en: "Privacy Policy",
+        es: "Política de Privacidad",
+        fr: "Politique de Confidentialité"
+      },
+      
+      footerTerms: {
+        it: "Termini & Condizioni",
+        en: "Terms & Conditions",
+        es: "Términos y Condiciones",
+        fr: "Termes et Conditions"
+      },
+      
+      footerFAQ: {
+        it: "FAQ",
+        en: "FAQ",
+        es: "Preguntas Frecuentes",
+        fr: "FAQ"
+      }
+      
     
 
     
