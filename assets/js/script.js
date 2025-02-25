@@ -1127,6 +1127,12 @@ const translations = {
         en: "Traveling is not just about visiting places, but about understanding stories, emotions, and the people who live there. Every journey is an opportunity to connect, learn, and see the world with more empathy.",
         es: "Viajar no es solo visitar lugares, sino comprender historias, emociones y las personas que los habitan. Cada viaje es una oportunidad para conectarse, aprender y ver el mundo con más empatía.",
         fr: "Voyager, ce n'est pas seulement visiter des lieux, mais comprendre les histoires, les émotions et les personnes qui y vivent. Chaque voyage est une opportunité de se connecter, d'apprendre et de voir le monde avec plus d'empathie."
+      },
+      viewAllservice: {
+        it: "Visualizza tutti i servizi",
+        en: "View All Services",
+        es: "Ver Todos los Servicios",
+        fr: "Voir Tous les Services"
       }
     };
 
