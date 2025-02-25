@@ -222,16 +222,16 @@ const translations = {
       fr: "Forfaits Tour Passionnants en Campanie"
     },
     packageSectionTitle: {
-      it: "Scopri la Regione Vesuviana",
-      en: "Discover the Vesuvian Region",
-      es: "Descubre la Región Vesuviana",
-      fr: "Découvrez la Région Vésuvienne"
+      it: "Scopri la Regione",
+      en: "Discover the Region",
+      es: "Descubre la Región",
+      fr: "Découvrez la Région"
     },
     packageSectionText: {
-      it: "Vivi un'esperienza unica esplorando i tesori storici e naturali della Campania: Pompei, Napoli, la Costiera Amalfitana e molto altro ancora.",
-      en: "Experience a unique journey exploring the historical and natural treasures of Campania: Pompeii, Naples, the Amalfi Coast, and much more.",
-      es: "Vive una experiencia única explorando los tesoros históricos y naturales de Campania: Pompeya, Nápoles, la Costa Amalfitana y mucho más.",
-      fr: "Vivez une expérience unique en explorant les trésors historiques et naturels de la Campanie : Pompéi, Naples, la Côte Amalfitaine, et bien plus encore."
+      it: "Vivi un'esperienza unica esplorando i tesori storici e naturali della Campania: Cilento, Pompei, Napoli, la Costiera Amalfitana e molto altro ancora.",
+      en: "Experience a unique journey exploring the historical and natural treasures of Campania: Cilento, Pompeii, Naples, the Amalfi Coast, and much more.",
+      es: "Vive una experiencia única explorando los tesoros históricos y naturales de Campania: Cilento, Pompeya, Nápoles, la Costa Amalfitana y mucho más.",
+      fr: "Vivez une expérience unique en explorant les trésors historiques et naturels de la Campanie: Cilento, Pompéi, Naples, la Côte Amalfitaine, et bien plus encore."
     },
     tour1Title: {
       it: "Tour Storico di Pompei",
@@ -612,7 +612,7 @@ const translations = {
         fr: "Réservez Maintenant"
       },
 
-      tourButton: {
+      tourButton1: {
         it: "Visualizza Tutti i Tour",
         en: "View All Tours",
         es: "Ver Todos los Tours",
@@ -714,13 +714,7 @@ const translations = {
         es: "Una experiencia única para los amantes del vino, inmersos en la naturaleza virgen de la costa.",
         fr: "Une expérience unique pour les amateurs de vin, immergés dans la nature préservée de la côte."
       },
-      // Bottone per prenotare (stessa chiave per tutti)
-      tourButton: {
-        it: "Prenota Ora",
-        en: "Book Now",
-        es: "Reserva Ahora",
-        fr: "Réservez Maintenant"
-      },
+
 
 
       vesuviusSectionSubtitle: {
@@ -794,12 +788,6 @@ const translations = {
         en: "/ per group",
         es: "/ por grupo",
         fr: "/ par groupe"
-      },
-      tourButton: {
-        it: "Prenota Ora",
-        en: "Book Now",
-        es: "Reserve Now",
-        fr: "Book Now" // o "Réservez maintenant" se preferisci in francese
       },
 
       naplesSectionSubtitle: {
@@ -891,7 +879,8 @@ const translations = {
         en: "Book Now",
         es: "Reserve Now",
         fr: "Book Now" // oppure "Réservez maintenant"
-      }
+      },
+      
     
 
     
@@ -973,6 +962,10 @@ document.querySelector('.tour-search-form').addEventListener('submit', function(
   // Apre WhatsApp in una nuova scheda
   window.open(whatsappUrl, '_blank');
 });
+
+
+
+
 
 
 
