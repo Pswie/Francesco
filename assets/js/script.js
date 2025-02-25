@@ -772,10 +772,10 @@ const translations = {
         fr: "Alliez histoire et saveurs avec un circuit exclusif de Pompéi, du Vésuve et une dégustation de vins dans une cave locale."
       },
       tourPompeiiVesuviusWine2Title: {
-        it: "Pompeii, Vesuvio ed Esperienza Enogastronomica",
-        en: "Pompeii, Vesuvius and Wine & Gastronomy Experience",
-        es: "Pompeya, Vesubio y Experiencia Enogastronómica",
-        fr: "Pompéi, Vésuve et Expérience Œnogastronomique"
+        it: "Pompeii, Vesuvio ed Esperienza Enogastronomica Premium",
+        en: "Pompeii, Vesuvius and Wine & Gastronomy Premium Experience",
+        es: "Pompeya, Vesubio y Experiencia Enogastronómica Premium",
+        fr: "Pompéi, Vésuve et Expérience Œnogastronomique Premium"
       },
       tourPompeiiVesuviusWine2Text: {
         it: "Cerchi un tour che unisca cultura, storia ed esperienza culinaria? Questo è il tour perfetto per te!",
