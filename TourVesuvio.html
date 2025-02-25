@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empathy - Tour and Transfer</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title" data-key="helplineTitle">For Further Inquires :</p>
+
+            <p class="helpline-number">+39 331 170 3702</p>
+          </div>
+
+        </a>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.svg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+
+
+
+
+
+
+          <div class="language-selector" onclick="this.classList.toggle('open')">
+            <div class="flag-bubble">
+              <!-- Bandiera corrente: per default, italiana -->
+              <span role="img" aria-label="Bandiera italiana">🇮🇹</span>
+            </div>
+            <button class="dropdown-toggle" aria-label="Cambia lingua">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#" data-lang="it" data-flag="🇮🇹">Italiano</a>
+              <a href="#" data-lang="en" data-flag="🇬🇧">English</a>
+              <a href="#" data-lang="es" data-flag="🇪🇸">Español</a>
+              <a href="#" data-lang="fr" data-flag="🇫🇷">Français</a>
+            </div>
+          </div>
+          
+
+          
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+                <ul class="navbar-list">
+
+                  <li>
+                    <a href="index.html#home" class="navbar-link"  data-key="navHome" data-nav-link>home</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="navbar-link"  data-key="navAbout" data-nav-link>about us</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#destination" class="navbar-link"  data-key="navDestination"data-nav-link>destination</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#package" class="navbar-link"  data-key="navPackages" data-nav-link>packages</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#gallery" class="navbar-link"  data-key="navGallery" data-nav-link>gallery</a>
+                  </li>
+
+                  <li>
+                    <a href="index.html#contact" class="navbar-link"  data-key="navContact" data-nav-link>contact us</a>
+                  </li>
+                  <li>
+                    <a href="index.html#servizi" class="navbar-link"  data-key="navService" data-nav-link>servizi</a>
+                  </li>
+
+                </ul>
+
+              </nav>
+
+              <button class="btn btn-primary" data-key="navBookNow" onclick="window.open('https://wa.me/393311703702', '_blank');">
+                Book Now
+              </button>
+        
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+          <!-- Titolo dinamico -->
+          <h2 class="h1 hero-title" data-key="heroTitle">Travel with Empathy</h2>
+      
+          <!-- Descrizione dinamica -->
+          <p class="hero-text" data-key="heroDescription">
+            Empathy is your trusted tour and transfer agency. We offer unique travel experiences, reliable transfers, and personalized tours to help you discover the best of every destination, ensuring comfort and safety every step of the way.
+          </p>
+      
+          <div class="btn-group">
+            <button class="btn btn-primary" data-key="learnMore" onclick="window.location.href='#contact'">Taxi</button>
+            <button class="btn btn-secondary" data-key="bookNow">Book now</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+            <!-- 
+        - #PACKAGE
+      -->
+
+
+
+<section class="package" id="vesuvius">
+    <div class="container">
+      <header class="section-header">
+        <h3 class="section-subtitle" data-key="vesuviusSectionSubtitle">
+          Tour e Attività al Vesuvio
+        </h3>
+        <h2 class="section-title" data-key="vesuviusSectionTitle">
+          Esplora il Vesuvio e le sue Meraviglie Storiche
+        </h2>
+      </header>
+      <article class="section-description">
+        <p class="section-text" data-key="vesuviusSectionText">
+          Scopri il vulcano che ha segnato la storia di Pompei ed Ercolano, esplorando rovine antiche e paesaggi unici con i nostri tour guidati.
+        </p>
+      </article>
+      <ul class="package-list">
+  
+        <li>
+          <div class="package-card">
+            <figure class="card-banner">
+              <img src="./assets/images/herculaneum-vesuvius.jpg" alt="Ercolano e Vesuvio" loading="lazy">
+            </figure>
+            <div class="card-content">
+              <h3 class="h3 card-title" data-key="tourHerculaneumVesuviusTitle">Ercolano e Vesuvio</h3>
+              <p class="card-text" data-key="tourHerculaneumVesuviusText">
+                Scopri Ercolano, la città romana sepolta dall'eruzione del Vesuvio nel 79 d.C., e sali sul vulcano per ammirare un panorama mozzafiato.
+              </p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="time"></ion-icon>
+                    <p class="text">8H</p>
+                  </div>
+                </li>
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="people"></ion-icon>
+                    <p class="text">pax: 8</p>
+                  </div>
+                </li>
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="location"></ion-icon>
+                    <p class="text">Ercolano, Vesuvio</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card-price">
+              <div class="wrapper">
+                <p class="reviews">(25 recensioni)</p>
+                <div class="card-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+              </div>
+              <p class="price">
+                €400 - €1.100
+                <span data-key="perPerson">/ per gruppo</span>
+              </p>
+              <button class="btn btn-secondary" data-key="tourButton" onclick="window.location.href='TourHerculaneumVesuvius.html'">
+                Prenota Ora
+              </button>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="package-card">
+            <figure class="card-banner">
+              <img src="./assets/images/pompeii-vesuvius.jpg" alt="Pompei e Vesuvio" loading="lazy">
+            </figure>
+            <div class="card-content">
+              <h3 class="h3 card-title" data-key="tourPompeiiVesuviusTitle">Pompei e Vesuvio</h3>
+              <p class="card-text" data-key="tourPompeiiVesuviusText">
+                Unisciti a noi per un tour alla scoperta di Pompei, una delle città più affascinanti dell'antichità, con un'escursione sul Vesuvio.
+              </p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="time"></ion-icon>
+                    <p class="text">8H</p>
+                  </div>
+                </li>
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="people"></ion-icon>
+                    <p class="text">pax: 8</p>
+                  </div>
+                </li>
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="location"></ion-icon>
+                    <p class="text">Pompei, Vesuvio</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card-price">
+              <div class="wrapper">
+                <p class="reviews">(32 recensioni)</p>
+                <div class="card-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <p class="price">
+                From: €400,00
+                <span data-key="perPerson">/ per gruppo</span>
+              </p>
+              <button class="btn btn-secondary" data-key="tourButton" onclick="window.location.href='TourPompeiiVesuvius.html'">
+                Prenota Ora
+              </button>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="package-card">
+            <figure class="card-banner">
+              <img src="./assets/images/wine-vesuvius.jpg" alt="Pompei, Vesuvio ed Esperienza Enogastronomica" loading="lazy">
+            </figure>
+            <div class="card-content">
+              <h3 class="h3 card-title" data-key="tourPompeiiVesuviusWineTitle">Pompei, Vesuvio ed Esperienza Enogastronomica</h3>
+              <p class="card-text" data-key="tourPompeiiVesuviusWineText">
+                Combina storia e sapori con un tour esclusivo tra Pompei, il Vesuvio e una degustazione di vini in una cantina locale.
+              </p>
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="time"></ion-icon>
+                    <p class="text">8H</p>
+                  </div>
+                </li>
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="people"></ion-icon>
+                    <p class="text">pax: 8</p>
+                  </div>
+                </li>
+                <li class="card-meta-item">
+                  <div class="meta-box">
+                    <ion-icon name="location"></ion-icon>
+                    <p class="text">Pompei, Vesuvio</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card-price">
+              <div class="wrapper">
+                <p class="reviews">(28 recensioni)</p>
+                <div class="card-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+              </div>
+              <p class="price">
+                From: €500,00
+                <span data-key="perPerson">/ per gruppo</span>
+              </p>
+              <button class="btn btn-secondary" data-key="tourButton" onclick="window.location.href='TourPompeiiVesuviusWine.html'">
+                Prenota Ora
+              </button>
+            </div>
+          </div>
+        </li>
+
+
+        <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="./assets/images/wine-vesuvius.jpg" alt="Pompei, Vesuvio ed Esperienza Enogastronomica" loading="lazy">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title" data-key="tourPompeiiVesuviusWineTitle">
+                  Pompei, Vesuvio ed Esperienza Enogastronomica
+                </h3>
+                <p class="card-text" data-key="tourPompeiiVesuviusWineText">
+                  Se vuoi combinare arte locale ed esperienza culinaria, questo tour è imperdibile. Una cantina immersa nel paesaggio del Vesuvio ti aspetta.
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+                      <p class="text">8H</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+                      <p class="text">pax: 8</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+                      <p class="text">Pompei, Vesuvio</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(35 recensioni)</p>
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </div>
+                </div>
+                <p class="price">
+                  From: €500,00
+                  <span data-key="perPerson">/ per gruppo</span>
+                </p>
+                <button class="btn btn-secondary" data-key="tourButton" onclick="window.location.href='TourPompeiiVesuviusWine.html'">
+                  Prenota Ora
+                </button>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="./assets/images/wine-vesuvius-2.jpg" alt="Pompei, Vesuvio ed Esperienza Enogastronomica" loading="lazy">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title" data-key="tourPompeiiVesuviusWine2Title">
+                  Pompei, Vesuvio ed Esperienza Enogastronomica
+                </h3>
+                <p class="card-text" data-key="tourPompeiiVesuviusWine2Text">
+                  Cerchi un tour che unisca cultura, storia ed esperienza culinaria? Questo è il tour perfetto per te!
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+                      <p class="text">8H</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+                      <p class="text">pax: 8</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+                      <p class="text">Pompei, Vesuvio</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(27 recensioni)</p>
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+                <p class="price">
+                  From: €400,00
+                  <span data-key="perPerson">/ per gruppo</span>
+                </p>
+                <button class="btn btn-secondary" data-key="tourButton" onclick="window.location.href='TourPompeiiVesuviusWine2.html'">
+                  Prenota Ora
+                </button>
+              </div>
+            </div>
+          </li>
+          
+  
+      </ul>
+    </div>
+  </section>
+  
+
+
+
+
+  
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a>
+
+          <p class="footer-text">
+            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
+            at
+            perferendis, pretium, aenean aut ultrices.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>3146 Koontz, California</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="">Empathy</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

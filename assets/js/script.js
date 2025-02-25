@@ -617,6 +617,280 @@ const translations = {
         en: "View All Tours",
         es: "Ver Todos los Tours",
         fr: "Voir Tous les Tours"
+      },
+
+
+
+      // Sezione Amalfi
+
+      amalfiSectionSubtitle: {
+        it: "Tour e Attività ad Amalfi",
+        en: "Tours and Activities in Amalfi",
+        es: "Tours y Actividades en Amalfi",
+        fr: "Circuits et Activités à Amalfi"
+      },
+      amalfiSectionTitle: {
+        it: "Scopri la Magia della Costiera Amalfitana",
+        en: "Discover the Magic of the Amalfi Coast",
+        es: "Descubre la Magia de la Costa Amalfitana",
+        fr: "Découvrez la Magie de la Côte Amalfitaine"
+      },
+      amalfiSectionText: {
+        it: "Esplora panorami mozzafiato, borghi incantevoli e la straordinaria bellezza della Costiera Amalfitana con i nostri tour esclusivi.",
+        en: "Explore breathtaking views, charming villages, and the extraordinary beauty of the Amalfi Coast with our exclusive tours.",
+        es: "Explora vistas impresionantes, pueblos encantadores y la extraordinaria belleza de la Costa Amalfitana con nuestros tours exclusivos.",
+        fr: "Découvrez des panoramas à couper le souffle, des villages pittoresques et la beauté extraordinaire de la Côte Amalfitaine avec nos circuits exclusifs."
+      },
+      // Schede dei tour
+      tourAmalfiTitle: {
+        it: "Amalfi Coast",
+        en: "Amalfi Coast",
+        es: "Costa Amalfitana",
+        fr: "Côte Amalfitaine"
+      },
+      tourAmalfiText: {
+        it: "Con le sue viste mozzafiato, la Costiera Amalfitana è una delle più belle del mondo.",
+        en: "With its breathtaking views, the Amalfi Coast is one of the most beautiful in the world.",
+        es: "Con sus impresionantes vistas, la Costa Amalfitana es una de las más bellas del mundo.",
+        fr: "Avec ses vues spectaculaires, la Côte Amalfitaine est l'une des plus belles au monde."
+      },
+      tourAmalfiSorrentoTitle: {
+        it: "Amalfi Coast and Sorrento",
+        en: "Amalfi Coast and Sorrento",
+        es: "Costa Amalfitana y Sorrento",
+        fr: "Côte Amalfitaine et Sorrento"
+      },
+      tourAmalfiSorrentoText: {
+        it: "Panorami incredibili, città uniche, borghi pittoreschi e i colori della natura ti aspettano.",
+        en: "Incredible panoramas, unique cities, charming villages and the vibrant colors of nature await you.",
+        es: "Panoramas increíbles, ciudades únicas, pueblos pintorescos y los vibrantes colores de la naturaleza te esperan.",
+        fr: "Des panoramas incroyables, des villes uniques, des villages pittoresques et les couleurs vibrantes de la nature vous attendent."
+      },
+      tourAmalfiFullDayTitle: {
+        it: "Amalfi Coast Full Day",
+        en: "Amalfi Coast Full Day",
+        es: "Costa Amalfitana Full Day",
+        fr: "Journée Complète sur la Côte Amalfitaine"
+      },
+      tourAmalfiFullDayText: {
+        it: "Un viaggio attraverso una delle strade costiere più belle che tu possa mai percorrere.",
+        en: "A journey along one of the most beautiful coastal roads you can ever travel.",
+        es: "Un viaje por una de las carreteras costeras más bellas que puedas recorrer.",
+        fr: "Un voyage sur l'une des plus belles routes côtières que vous puissiez emprunter."
+      },
+      tourAmalfiHalfDayTitle: {
+        it: "Amalfi Coast Half Day",
+        en: "Amalfi Coast Half Day",
+        es: "Costa Amalfitana Medio Día",
+        fr: "Demi-Journée sur la Côte Amalfitaine"
+      },
+      tourAmalfiHalfDayText: {
+        it: "Il tour perfetto per scoprire il fascino della Costiera Amalfitana in poche ore.",
+        en: "The perfect tour to discover the charm of the Amalfi Coast in just a few hours.",
+        es: "El tour perfecto para descubrir el encanto de la Costa Amalfitana en pocas horas.",
+        fr: "Le circuit idéal pour découvrir le charme de la Côte Amalfitaine en quelques heures."
+      },
+      tourPompeiiAmalfiTitle: {
+        it: "Pompeii and Amalfi Coast",
+        en: "Pompeii and the Amalfi Coast",
+        es: "Pompeya y la Costa Amalfitana",
+        fr: "Pompéi et la Côte Amalfitaine"
+      },
+      tourPompeiiAmalfiText: {
+        it: "Immergiti nella cultura italiana visitando Pompei e la Costiera Amalfitana in un unico tour.",
+        en: "Immerse yourself in Italian culture by visiting Pompeii and the Amalfi Coast on one tour.",
+        es: "Sumérgete en la cultura italiana visitando Pompeya y la Costa Amalfitana en un solo tour.",
+        fr: "Plongez dans la culture italienne en visitant Pompéi et la Côte Amalfitaine lors d'un circuit unique."
+      },
+      tourWineTitle: {
+        it: "Wine and Fancy Food Experience",
+        en: "Wine and Fancy Food Experience",
+        es: "Experiencia de Vino y Gastronomía",
+        fr: "Expérience Vin et Gastronomie"
+      },
+      tourWineText: {
+        it: "Un'esperienza unica per gli amanti del vino, immersi nella natura incontaminata della Costiera.",
+        en: "A unique experience for wine lovers, immersed in the unspoiled nature of the coast.",
+        es: "Una experiencia única para los amantes del vino, inmersos en la naturaleza virgen de la costa.",
+        fr: "Une expérience unique pour les amateurs de vin, immergés dans la nature préservée de la côte."
+      },
+      // Bottone per prenotare (stessa chiave per tutti)
+      tourButton: {
+        it: "Prenota Ora",
+        en: "Book Now",
+        es: "Reserva Ahora",
+        fr: "Réservez Maintenant"
+      },
+
+
+      vesuviusSectionSubtitle: {
+        it: "Tour e Attività al Vesuvio",
+        en: "Tours and Activities at Vesuvius",
+        es: "Tours y Actividades en el Vesubio",
+        fr: "Circuits et Activités au Vésuve"
+      },
+      vesuviusSectionTitle: {
+        it: "Esplora il Vesuvio e le sue Meraviglie Storiche",
+        en: "Explore Vesuvius and its Historical Wonders",
+        es: "Explora el Vesubio y sus Maravillas Históricas",
+        fr: "Découvrez le Vésuve et ses Merveilles Historiques"
+      },
+      vesuviusSectionText: {
+        it: "Scopri il vulcano che ha segnato la storia di Pompei ed Ercolano, esplorando rovine antiche e paesaggi unici con i nostri tour guidati.",
+        en: "Discover the volcano that marked the history of Pompeii and Herculaneum by exploring ancient ruins and unique landscapes with our guided tours.",
+        es: "Descubre el volcán que marcó la historia de Pompeya y Herculano explorando ruinas antiguas y paisajes únicos con nuestros tours guiados.",
+        fr: "Découvrez le volcan qui a marqué l'histoire de Pompéi et d'Herculanum en explorant des ruines anciennes et des paysages uniques avec nos circuits guidés."
+      },
+      tourHerculaneumVesuviusTitle: {
+        it: "Ercolano e Vesuvio",
+        en: "Herculaneum and Vesuvius",
+        es: "Herculano y Vesubio",
+        fr: "Herculanum et Vésuve"
+      },
+      tourHerculaneumVesuviusText: {
+        it: "Scopri Ercolano, la città romana sepolta dall'eruzione del Vesuvio nel 79 d.C., e sali sul vulcano per ammirare un panorama mozzafiato.",
+        en: "Discover Herculaneum, the Roman city buried by the eruption of Vesuvius in 79 AD, and climb the volcano for a breathtaking view.",
+        es: "Descubre Herculano, la ciudad romana sepultada por la erupción del Vesubio en el 79 d.C., y sube al volcán para disfrutar de una vista impresionante.",
+        fr: "Découvrez Herculanum, la ville romaine ensevelie par l'éruption du Vésuve en 79 après J.-C., et grimpez sur le volcan pour admirer un panorama à couper le souffle."
+      },
+      tourPompeiiVesuviusTitle: {
+        it: "Pompei e Vesuvio",
+        en: "Pompeii and Vesuvius",
+        es: "Pompeya y Vesubio",
+        fr: "Pompéi et Vésuve"
+      },
+      tourPompeiiVesuviusText: {
+        it: "Unisciti a noi per un tour alla scoperta di Pompei, una delle città più affascinanti dell'antichità, con un'escursione sul Vesuvio.",
+        en: "Join us on a tour to discover Pompeii, one of the most fascinating cities of antiquity, along with an excursion to Vesuvius.",
+        es: "Únete a nosotros en un tour para descubrir Pompeya, una de las ciudades más fascinantes de la antigüedad, junto con una excursión al Vesubio.",
+        fr: "Rejoignez-nous pour un circuit de découverte de Pompéi, l'une des villes les plus fascinantes de l'Antiquité, accompagné d'une excursion au Vésuve."
+      },
+      tourPompeiiVesuviusWineTitle: {
+        it: "Pompeii, Vesuvio ed Esperienza Enogastronomica",
+        en: "Pompeii, Vesuvius and Wine & Gastronomy Experience",
+        es: "Pompeya, Vesubio y Experiencia Enogastronómica",
+        fr: "Pompéi, Vésuve et Expérience Œnogastronomique"
+      },
+      tourPompeiiVesuviusWineText: {
+        it: "Combina storia e sapori con un tour esclusivo tra Pompei, il Vesuvio e una degustazione di vini in una cantina locale.",
+        en: "Combine history and flavors with an exclusive tour of Pompeii, Vesuvius, and a wine tasting at a local winery.",
+        es: "Combina historia y sabores con un tour exclusivo por Pompeya, el Vesubio y una degustación de vinos en una bodega local.",
+        fr: "Alliez histoire et saveurs avec un circuit exclusif de Pompéi, du Vésuve et une dégustation de vins dans une cave locale."
+      },
+      tourPompeiiVesuviusWine2Title: {
+        it: "Pompeii, Vesuvio ed Esperienza Enogastronomica",
+        en: "Pompeii, Vesuvius and Wine & Gastronomy Experience",
+        es: "Pompeya, Vesubio y Experiencia Enogastronómica",
+        fr: "Pompéi, Vésuve et Expérience Œnogastronomique"
+      },
+      tourPompeiiVesuviusWine2Text: {
+        it: "Cerchi un tour che unisca cultura, storia ed esperienza culinaria? Questo è il tour perfetto per te!",
+        en: "Looking for a tour that combines local culture, history, and culinary experiences? This is the perfect tour for you!",
+        es: "¿Buscas un tour que combine cultura local, historia y experiencias culinarias? ¡Este es el tour perfecto para ti!",
+        fr: "Vous cherchez un circuit alliant culture locale, histoire et expériences culinaires ? C'est le circuit parfait pour vous !"
+      },
+      perPerson: {
+        it: "/ per gruppo",
+        en: "/ per group",
+        es: "/ por grupo",
+        fr: "/ par groupe"
+      },
+      tourButton: {
+        it: "Prenota Ora",
+        en: "Book Now",
+        es: "Reserve Now",
+        fr: "Book Now" // o "Réservez maintenant" se preferisci in francese
+      },
+
+      naplesSectionSubtitle: {
+        it: "Tour e Attività a Napoli",
+        en: "Tours and Activities in Naples",
+        es: "Tours y Actividades en Nápoles",
+        fr: "Circuits et Activités à Naples"
+      },
+      naplesSectionTitle: {
+        it: "Scopri Napoli e il suo Patrimonio Unico",
+        en: "Discover Naples and its Unique Heritage",
+        es: "Descubre Nápoles y su Patrimonio Único",
+        fr: "Découvrez Naples et son Patrimoine Unique"
+      },
+      naplesSectionText: {
+        it: "Visita Napoli, una delle città più affascinanti d'Italia, con i suoi siti storici, la sua cultura vivace e la sua cucina rinomata in tutto il mondo.",
+        en: "Visit Naples, one of Italy's most fascinating cities, with its historic sites, vibrant culture, and world-renowned cuisine.",
+        es: "Visita Nápoles, una de las ciudades más fascinantes de Italia, con sus sitios históricos, su cultura vibrante y su cocina reconocida mundialmente.",
+        fr: "Visitez Naples, l'une des villes les plus fascinantes d'Italie, avec ses sites historiques, sa culture dynamique et sa cuisine renommée dans le monde entier."
+      },
+      tourCasertaNaplesTitle: {
+        it: "Caserta e Napoli",
+        en: "Caserta and Naples",
+        es: "Caserta y Nápoles",
+        fr: "Caserta et Naples"
+      },
+      tourCasertaNaplesText: {
+        it: "Approfitta di questa occasione speciale per visitare due siti Patrimonio dell'Umanità in un solo tour!",
+        en: "Take advantage of this special opportunity to visit two UNESCO World Heritage sites in one tour!",
+        es: "¡Aprovecha esta oportunidad especial para visitar dos sitios Patrimonio de la Humanidad en un solo tour!",
+        fr: "Profitez de cette occasion spéciale pour visiter deux sites du patrimoine mondial de l'UNESCO en un seul circuit !"
+      },
+      tourNaplesCityTitle: {
+        it: "Tour della Città di Napoli",
+        en: "Naples City Tour",
+        es: "Tour de la Ciudad de Nápoles",
+        fr: "Circuit dans la Ville de Naples"
+      },
+      tourNaplesCityText: {
+        it: "Scopri la terza città più grande d'Italia, ricca di storia, cultura e una gastronomia senza eguali.",
+        en: "Discover Italy's third-largest city, rich in history, culture, and unmatched cuisine.",
+        es: "Descubre la tercera ciudad más grande de Italia, rica en historia, cultura y con una gastronomía sin igual.",
+        fr: "Découvrez la troisième plus grande ville d'Italie, riche en histoire, culture et une cuisine incomparable."
+      },
+      tourPompeiiMuseumTitle: {
+        it: "Pompei e Museo Archeologico di Napoli",
+        en: "Pompeii and Naples Archaeological Museum",
+        es: "Pompeya y Museo Arqueológico de Nápoles",
+        fr: "Pompéi et Musée Archéologique de Naples"
+      },
+      tourPompeiiMuseumText: {
+        it: "Un tour unico tra gli scavi di Pompei e il Museo Archeologico, che custodisce tesori inestimabili dell’antichità.",
+        en: "A unique tour of Pompeii's ruins and the Archaeological Museum, which houses invaluable treasures of antiquity.",
+        es: "Un tour único por las ruinas de Pompeya y el Museo Arqueológico, que alberga tesoros invaluables de la antigüedad.",
+        fr: "Un circuit unique à travers les ruines de Pompéi et le Musée Archéologique, qui abrite des trésors inestimables de l'Antiquité."
+      },
+      tourPompeiiNaplesTitle: {
+        it: "Pompei e Centro Storico di Napoli",
+        en: "Pompeii and Naples Historic Center",
+        es: "Pompeya y Centro Histórico de Nápoles",
+        fr: "Pompéi et Centre Historique de Naples"
+      },
+      tourPompeiiNaplesText: {
+        it: "Se ami la storia antica e vuoi immergerti nella cultura partenopea, questo tour è perfetto per te.",
+        en: "If you love ancient history and want to immerse yourself in Neapolitan culture, this tour is perfect for you.",
+        es: "Si amas la historia antigua y deseas sumergirte en la cultura napolitana, ¡este tour es perfecto para ti!",
+        fr: "Si vous aimez l'histoire antique et souhaitez vous immerger dans la culture napolitaine, ce circuit est parfait pour vous."
+      },
+      tourCasertaNaplesCentreTitle: {
+        it: "Reggia di Caserta e Centro Storico di Napoli",
+        en: "Caserta Royal Palace and Naples Historic Center",
+        es: "La Realeza de Caserta y Centro Histórico de Nápoles",
+        fr: "Palais Royal de Caserte et Centre Historique de Naples"
+      },
+      tourCasertaNaplesCentreText: {
+        it: "Un'occasione imperdibile per visitare due siti UNESCO in un solo tour!",
+        en: "An unmissable opportunity to visit two UNESCO sites in one tour!",
+        es: "¡Una oportunidad imperdible para visitar dos sitios UNESCO en un solo tour!",
+        fr: "Une occasion unique de visiter deux sites UNESCO en un seul circuit !"
+      },
+      perPerson: {
+        it: "/ per gruppo",
+        en: "/ per group",
+        es: "/ por grupo",
+        fr: "/ par groupe"
+      },
+      tourButton: {
+        it: "Prenota Ora",
+        en: "Book Now",
+        es: "Reserve Now",
+        fr: "Book Now" // oppure "Réservez maintenant"
       }
     
 
