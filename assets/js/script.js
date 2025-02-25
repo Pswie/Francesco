@@ -949,12 +949,186 @@ const translations = {
         en: "FAQ",
         es: "Preguntas Frecuentes",
         fr: "FAQ"
-      }
-      
-    
+      },
 
+
+      servicesSubtitle: {
+        it: "I nostri servizi",
+        en: "Our Services",
+        es: "Nuestros Servicios",
+        fr: "Nos Services"
+      },
+      servicesTitle: {
+        it: "Servizi esclusivi per il tuo viaggio",
+        en: "Exclusive Services for Your Journey",
+        es: "Servicios exclusivos para tu viaje",
+        fr: "Services exclusifs pour votre voyage"
+      },
+      servicesDescription: {
+        it: "Offriamo servizi personalizzati per ogni esigenza di viaggio, garantendo comfort, puntualità e un’esperienza unica.",
+        en: "We offer personalized services for every travel need, ensuring comfort, punctuality, and a unique experience.",
+        es: "Ofrecemos servicios personalizados para cada necesidad de viaje, garantizando comodidad, puntualidad y una experiencia única.",
+        fr: "Nous offrons des services personnalisés pour chaque besoin de voyage, garantissant confort, ponctualité et une expérience unique."
+      },
+      
+      // Concierge Service
+      conciergeSubtitle: {
+        it: "Assistenza Personale",
+        en: "Personal Assistance",
+        es: "Asistencia Personal",
+        fr: "Assistance Personnalisée"
+      },
+      conciergeTitle: {
+        it: "Servizio Concierge",
+        en: "Concierge Service",
+        es: "Servicio de Concierge",
+        fr: "Service de Conciergerie"
+      },
+      conciergeText: {
+        it: "Un servizio esclusivo per prenotazioni, consigli e supporto durante il tuo viaggio.",
+        en: "An exclusive service for bookings, advice, and support during your trip.",
+        es: "Un servicio exclusivo para reservas, consejos y asistencia durante tu viaje.",
+        fr: "Un service exclusif pour les réservations, les conseils et l'assistance pendant votre voyage."
+      },
     
-  };
+      // Wedding Transfer
+      weddingSubtitle: {
+        it: "Matrimoni",
+        en: "Weddings",
+        es: "Bodas",
+        fr: "Mariages"
+      },
+      weddingTitle: {
+        it: "Trasferimento per Matrimoni",
+        en: "Wedding Transfer",
+        es: "Traslado para Bodas",
+        fr: "Transfert de Mariage"
+      },
+      weddingText: {
+        it: "Trasporto per il tuo matrimonio con autista dedicato e attesa inclusa.",
+        en: "Transport for your wedding with a dedicated driver and waiting service included.",
+        es: "Transporte para tu boda con conductor dedicado y espera incluida.",
+        fr: "Transport pour votre mariage avec chauffeur dédié et attente incluse."
+      },
+    
+      // Airport Transfer
+      airportSubtitle: {
+        it: "Aeroporti",
+        en: "Airports",
+        es: "Aeropuertos",
+        fr: "Aéroports"
+      },
+      airportTitle: {
+        it: "Trasferimento Aeroportuale",
+        en: "Airport Transfer",
+        es: "Traslado al Aeropuerto",
+        fr: "Transfert Aéroport"
+      },
+      airportText: {
+        it: "Raggiungi l'aeroporto con il massimo comfort e senza stress.",
+        en: "Reach the airport with maximum comfort and zero stress.",
+        es: "Llega al aeropuerto con el máximo confort y sin estrés.",
+        fr: "Rejoignez l'aéroport avec un confort maximal et sans stress."
+      },
+    
+      // Business Transfer
+      businessSubtitle: {
+        it: "Viaggi d'affari",
+        en: "Business Travel",
+        es: "Viajes de Negocios",
+        fr: "Voyages d'Affaires"
+      },
+      businessTitle: {
+        it: "Trasferimento Business",
+        en: "Business Transfer",
+        es: "Traslado Empresarial",
+        fr: "Transfert d'Affaires"
+      },
+      businessText: {
+        it: "Servizio dedicato per meeting, eventi aziendali e viaggi d’affari.",
+        en: "Dedicated service for meetings, corporate events, and business trips.",
+        es: "Servicio dedicado para reuniones, eventos corporativos y viajes de negocios.",
+        fr: "Service dédié pour les réunions, événements d'entreprise et voyages d'affaires."
+      },
+    
+      // Private Tour
+      privateTourSubtitle: {
+        it: "Esperienze Esclusive",
+        en: "Exclusive Experiences",
+        es: "Experiencias Exclusivas",
+        fr: "Expériences Exclusives"
+      },
+      privateTourTitle: {
+        it: "Tour Privati",
+        en: "Private Tours",
+        es: "Tours Privados",
+        fr: "Tours Privés"
+      },
+      privateTourText: {
+        it: "Scopri luoghi unici con un tour personalizzato e un autista a tua disposizione.",
+        en: "Discover unique places with a personalized tour and a private driver.",
+        es: "Descubre lugares únicos con un tour personalizado y un conductor privado.",
+        fr: "Découvrez des lieux uniques avec une visite personnalisée et un chauffeur privé."
+      },
+    
+      // Luxury Car Service
+      luxuryCarSubtitle: {
+        it: "Auto di Lusso",
+        en: "Luxury Cars",
+        es: "Coches de Lujo",
+        fr: "Voitures de Luxe"
+      },
+      luxuryCarTitle: {
+        it: "Servizio Auto di Lusso",
+        en: "Luxury Car Service",
+        es: "Servicio de Autos de Lujo",
+        fr: "Service de Voiture de Luxe"
+      },
+      luxuryCarText: {
+        it: "Servizio esclusivo con auto di lusso e autista privato.",
+        en: "Exclusive service with luxury cars and private driver.",
+        es: "Servicio exclusivo con autos de lujo y conductor privado.",
+        fr: "Service exclusif avec voitures de luxe et chauffeur privé."
+      },
+    
+      // Shopping Transfer
+      shoppingSubtitle: {
+        it: "Shopping",
+        en: "Shopping",
+        es: "Compras",
+        fr: "Shopping"
+      },
+      shoppingTitle: {
+        it: "Trasferimento per Shopping",
+        en: "Shopping Transfer",
+        es: "Traslado para Compras",
+        fr: "Transfert Shopping"
+      },
+      shoppingText: {
+        it: "Viaggia in totale comfort per una giornata di shopping nelle migliori boutique.",
+        en: "Travel in total comfort for a shopping day at the best boutiques.",
+        es: "Viaja con total comodidad para un día de compras en las mejores boutiques.",
+        fr: "Voyagez en tout confort pour une journée de shopping dans les meilleures boutiques."
+      },
+      aboutSubtitle: {
+        it: "Chi Siamo",
+        en: "About Us",
+        es: "Quiénes Somos",
+        fr: "Qui Sommes-Nous"
+      },
+      aboutTitle: {
+        it: "Viaggiare con Empathy",
+        en: "Travel with Empathy",
+        es: "Viajar con Empathy",
+        fr: "Voyager avec Empathy"
+      },
+      aboutText: {
+        it: "Viaggiare non è solo visitare luoghi, ma comprendere le storie, le emozioni e le persone che li abitano. Ogni viaggio è un'opportunità per connettersi, imparare e vedere il mondo con occhi più empatici.",
+        en: "Traveling is not just about visiting places, but about understanding stories, emotions, and the people who live there. Every journey is an opportunity to connect, learn, and see the world with more empathy.",
+        es: "Viajar no es solo visitar lugares, sino comprender historias, emociones y las personas que los habitan. Cada viaje es una oportunidad para conectarse, aprender y ver el mundo con más empatía.",
+        fr: "Voyager, ce n'est pas seulement visiter des lieux, mais comprendre les histoires, les émotions et les personnes qui y vivent. Chaque voyage est une opportunité de se connecter, d'apprendre et de voir le monde avec plus d'empathie."
+      }
+    };
 
 
   function updateLanguage(lang) {
