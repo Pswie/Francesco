@@ -1197,10 +1197,10 @@ document.querySelector('.tour-search-form').addEventListener('submit', function(
   
   // Messaggio precompilato in base alla lingua scelta
   const messageTemplates = {
-    it: `Ciao, sono interessato ad prenotare un servizio di transfer. Partirò da ${departure} e arriverò a ${destination}. Viaggeranno con me ${people} persone. La data di partenza è ${checkin} e l'orario previsto è ${departureTime}. Grazie per l'assistenza.`,
-    en: `Hello, I am interested in booking a transfer service. I will be departing from ${departure} and heading towards ${destination}. There will be ${people} people traveling with me. Our planned departure date is ${checkin} and we intend to leave at ${departureTime}. Thank you for your assistance.`,
-    es: `Hola, estoy interesado en reservar un servicio de transfer. Saldré desde ${departure} y me dirigiré hacia ${destination}. Viajarán conmigo ${people} personas. La fecha de salida es ${checkin} y la hora prevista es ${departureTime}. Gracias por su ayuda.`,
-    fr: `Bonjour, je suis intéressé par la réservation d'un service de transfert. Je partirai de ${departure} et me dirigerai vers ${destination}. Il y aura ${people} personnes voyageant avec moi. La date de départ prévue est le ${checkin} et l'heure de départ est ${departureTime}. Merci pour votre aide.`
+    it: `Ciao, sono interessato a prenotare un servizio di transfer. Partirò da ${departure} e la destinazione è ${destination}. Siamo ${people} persone. La data di partenza è ${checkin} e l'orario previsto è ${departureTime}.`,
+    en: `Hello, I am interested in booking a transfer service. I will be departing from ${departure} and heading towards ${destination}. There will be ${people} people traveling with me. Our planned departure date is ${checkin} and we intend to leave at ${departureTime}.`,
+    es: `Hola, estoy interesado en reservar un servicio de transfer. Saldré desde ${departure} y me dirigiré hacia ${destination}. Viajarán conmigo ${people} personas. La fecha de salida es ${checkin} y la hora prevista es ${departureTime}.`,
+    fr: `Bonjour, je suis intéressé par la réservation d'un service de transfert. Je partirai de ${departure} et me dirigerai vers ${destination}. Il y aura ${people} personnes voyageant avec moi. La date de départ prévue est le ${checkin} et l'heure de départ est ${departureTime}.`
   };
   
   const message = messageTemplates[lang];
@@ -1212,6 +1212,77 @@ document.querySelector('.tour-search-form').addEventListener('submit', function(
   // Apre WhatsApp in una nuova scheda
   window.open(whatsappUrl, '_blank');
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let comuniData = []; // Variabile per salvare i comuni
+
+  fetch("/comuni.json")
+      .then(response => response.json())
+      .then(data => {
+          comuniData = data; // Salva i comuni in una variabile
+      })
+      .catch(error => {
+          console.error("Errore nel caricamento dei comuni:", error);
+          alert("Impossibile caricare i comuni, riprova più tardi.");
+      });
+
+  function filterComuni(input, listElement) {
+      listElement.innerHTML = ""; // Pulisce i suggerimenti precedenti
+      const searchText = input.value.trim().toLowerCase();
+
+      if (searchText.length < 2) return; // Mostra suggerimenti solo dopo 2 lettere
+
+      const filteredComuni = comuniData
+          .filter(comune => comune.nome.toLowerCase().startsWith(searchText))
+          .slice(0, 5); // Prende solo i primi 5 risultati
+
+      filteredComuni.forEach(comune => {
+          let option = document.createElement("option");
+          option.value = comune.nome;
+          listElement.appendChild(option);
+      });
+  }
+
+  function validateComune(input) {
+      const isValid = comuniData.some(comune => comune.nome.toLowerCase() === input.value.trim().toLowerCase());
+
+      if (!isValid) {
+          input.classList.add("error"); // Aggiunge classe errore
+          return false; // Il valore non è valido
+      } else {
+          input.classList.remove("error"); // Rimuove l'errore se il comune è valido
+          return true; // Il valore è valido
+      }
+  }
+
+  // Autocompletamento
+  document.getElementById("departure").addEventListener("input", function () {
+      filterComuni(this, document.getElementById("departureList"));
+  });
+
+  document.getElementById("destination").addEventListener("input", function () {
+      filterComuni(this, document.getElementById("destinationList"));
+  });
+
+  // Validazione quando si preme il pulsante "Richiedi Informazioni"
+  document.querySelector(".tour-search-form").addEventListener("submit", function (event) {
+      let isDepartureValid = validateComune(document.getElementById("departure"));
+      let isDestinationValid = validateComune(document.getElementById("destination"));
+
+      if (!isDepartureValid || !isDestinationValid) {
+          event.preventDefault(); // Blocca l'invio del modulo
+          document.getElementById("error-message").style.display = "block"; // Mostra il messaggio di errore
+      } else {
+          document.getElementById("error-message").style.display = "none"; // Nasconde il messaggio se tutto è corretto
+      }
+  });
+});
+
+
+
+
+
 
 
 

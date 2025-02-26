@@ -224,55 +224,62 @@
         - #TOUR SEARCH
     -->
 
-    <section class="tour-search" id="search">
-      <div class="container">
-        <form action="" class="tour-search-form">
-          
-          <!-- Campo Partenza -->
-          <div class="input-wrapper">
-            <label for="departure" class="input-label" data-key="labelDeparture">Partenza*</label>
-            <input type="text" name="departure" id="departure" required
-                   data-key="placeholderDeparture"
-                   class="input-field">
-          </div>
-          
-          <!-- Campo Destinazione -->
-          <div class="input-wrapper">
-            <label for="destination" class="input-label" data-key="labelDestination">Destinazione*</label>
-            <input type="text" name="destination" id="destination" required
-                   data-key="placeholderDestination"
-                   class="input-field">
-          </div>
-          
-          <!-- Campo Numero Persone -->
-          <div class="input-wrapper">
-            <label for="people" class="input-label" data-key="labelPeople">Pax Number*</label>
-            <input type="number" name="people" id="people" required
-                   data-key="placeholderPeople"
-                   class="input-field">
-          </div>
-          
-          <!-- Campo Data Partenza -->
-          <div class="input-wrapper">
-            <label for="checkin" class="input-label" data-key="labelCheckin">Data Partenza**</label>
-            <input type="date" name="checkin" id="checkin" required
-                   data-key="placeholderCheckin"
-                   class="input-field">
-          </div>
-          
-          <!-- Campo Ora Partenza -->
-          <div class="input-wrapper">
-            <label for="departureTime" class="input-label" data-key="labelDepartureTime">Ora Partenza**</label>
-            <input type="time" name="departureTime" id="departureTime" required
-                   data-key="placeholderDepartureTime"
-                   class="input-field">
-          </div>
-          
-          <button type="submit" class="btn btn-secondary" data-key="inquireNow">Inquire now</button>
-          
-        </form>
+<!-- 
+    - #TOUR SEARCH
+-->
+
+<section class="tour-search" id="search">
+  <div class="container">
+    <form action="" class="tour-search-form">
+      
+      <!-- Campo Partenza -->
+      <div class="input-wrapper">
+        <label for="departure" class="input-label" data-key="labelDeparture">Partenza*</label>
+        <input type="text" name="departure" id="departure" required 
+               data-key="placeholderDeparture"
+               class="input-field" list="departureList">
+        <datalist id="departureList"></datalist>
       </div>
-    </section>
+
+      <!-- Campo Destinazione -->
+      <div class="input-wrapper">
+        <label for="destination" class="input-label" data-key="labelDestination">Destinazione*</label>
+        <input type="text" name="destination" id="destination" required 
+               data-key="placeholderDestination"
+               class="input-field" list="destinationList">
+        <datalist id="destinationList"></datalist>
+      </div>
+
+      <!-- Campo Numero Persone -->
+      <div class="input-wrapper">
+        <label for="people" class="input-label" data-key="labelPeople">Pax Number*</label>
+        <input type="number" name="people" id="people" required
+               data-key="placeholderPeople"
+               class="input-field">
+      </div>
+
+      <!-- Campo Data Partenza -->
+      <div class="input-wrapper">
+        <label for="checkin" class="input-label" data-key="labelCheckin">Data Partenza*</label>
+        <input type="date" name="checkin" id="checkin" required
+               data-key="placeholderCheckin"
+               class="input-field">
+      </div>
+
+      <!-- Campo Ora Partenza -->
+      <div class="input-wrapper">
+        <label for="departureTime" class="input-label" data-key="labelDepartureTime">Ora Partenza*</label>
+        <input type="time" name="departureTime" id="departureTime" required
+               data-key="placeholderDepartureTime"
+               class="input-field">
+      </div>
+
+      <button type="submit" class="btn btn-secondary" data-key="inquireNow">Inquire now</button>
+
+    </form>
+  </div>
+</section>
+
     
 
 
@@ -879,6 +886,10 @@
   </div>
 
 </footer>
+
+
+
+
 
 
 
