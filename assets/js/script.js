@@ -1217,7 +1217,7 @@ document.querySelector('.tour-search-form').addEventListener('submit', function(
 document.addEventListener("DOMContentLoaded", function () {
   let comuniData = []; // Variabile per salvare i comuni
 
-  fetch("comuni.json")
+  fetch("https://github.com/Pswie/Francesco/comuni.json")
       .then(response => response.json())
       .then(data => {
           comuniData = data; // Salva i comuni in una variabile
@@ -1243,7 +1243,7 @@ document.addEventListener("DOMContentLoaded", function () {
           listElement.appendChild(option);
       });
   }
-  
+
 
   function validateComune(input) {
       const isValid = comuniData.some(comune => comune.nome.toLowerCase() === input.value.trim().toLowerCase());
