@@ -1715,7 +1715,7 @@ document.querySelector('.tour-search-form').addEventListener('submit', function(
 document.addEventListener("DOMContentLoaded", function () {
   let comuniData = []; // Variabile per salvare i comuni
 
-  fetch("https://github.com/Pswie/Francesco/comuni.json")
+  fetch("https://raw.githubusercontent.com/Pswie/Francesco/main/comuni.json")
       .then(response => response.json())
       .then(data => {
           comuniData = data; // Salva i comuni in una variabile
