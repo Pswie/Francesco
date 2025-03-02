@@ -4,7 +4,10 @@ const flagUrls = {
   it: "https://flagcdn.com/48x36/it.png",
   en: "https://flagcdn.com/48x36/gb.png", // usa il GB per l'inglese
   es: "https://flagcdn.com/48x36/es.png",
-  fr: "https://flagcdn.com/48x36/fr.png"
+  fr: "https://flagcdn.com/48x36/fr.png",
+  de: "https://flagcdn.com/48x36/de.png",
+  ru: "https://flagcdn.com/48x36/ru.png",
+  zh: "https://flagcdn.com/48x36/cn.png"
 };
 
 
@@ -1698,7 +1701,8 @@ document.querySelector('.tour-search-form').addEventListener('submit', function(
     it: `Ciao, sono interessato a prenotare un servizio di transfer. Partirò da ${departure} e la destinazione è ${destination}. Siamo ${people} persone. La data di partenza è ${checkin} e l'orario previsto è ${departureTime}.`,
     en: `Hello, I am interested in booking a transfer service. I will be departing from ${departure} and heading towards ${destination}. There will be ${people} people traveling with me. Our planned departure date is ${checkin} and we intend to leave at ${departureTime}.`,
     es: `Hola, estoy interesado en reservar un servicio de transfer. Saldré desde ${departure} y me dirigiré hacia ${destination}. Viajarán conmigo ${people} personas. La fecha de salida es ${checkin} y la hora prevista es ${departureTime}.`,
-    fr: `Bonjour, je suis intéressé par la réservation d'un service de transfert. Je partirai de ${departure} et me dirigerai vers ${destination}. Il y aura ${people} personnes voyageant avec moi. La date de départ prévue est le ${checkin} et l'heure de départ est ${departureTime}.`
+    fr: `Bonjour, je suis intéressé par la réservation d'un service de transfert. Je partirai de ${departure} et me dirigerai vers ${destination}. Il y aura ${people} personnes voyageant avec moi. La date de départ prévue est le ${checkin} et l'heure de départ est ${departureTime}.`,
+    de: `Hallo, ich interessiere mich für die Buchung eines Transferdienstes. Ich werde von ${departure} abfahren und in Richtung ${destination} fahren. Es werden ${people} Personen mit mir reisen. Unser geplantes Abreisedatum ist der ${checkin} und wir beabsichtigen, um ${departureTime} zu fahren.`
   };
   
   const message = messageTemplates[lang];
