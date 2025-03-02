@@ -1715,14 +1715,33 @@ document.querySelector('.tour-search-form').addEventListener('submit', function(
 document.addEventListener("DOMContentLoaded", function () {
   let comuniData = []; // Variabile per salvare i comuni
 
-  fetch("https://raw.githubusercontent.com/Pswie/Francesco/main/comuni.json")
-      .then(response => response.json())
+  fetch("https://raw.githubusercontent.com/Pswie/Francesco/main/comuni.json", {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+      },
+      cache: 'no-cache'
+  })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Errore di rete o risposta non valida');
+          }
+          return response.json();
+      })
       .then(data => {
           comuniData = data; // Salva i comuni in una variabile
+          console.log("Comuni caricati con successo:", comuniData.length);
       })
       .catch(error => {
           console.error("Errore nel caricamento dei comuni:", error);
-          alert("Impossibile caricare i comuni, riprova più tardi.");
+          // Fallback con alcuni comuni principali
+          comuniData = [
+              {"nome": "Napoli"}, {"nome": "Roma"}, {"nome": "Milano"}, 
+              {"nome": "Firenze"}, {"nome": "Venezia"}, {"nome": "Torino"}, 
+              {"nome": "Bologna"}, {"nome": "Palermo"}, {"nome": "Bari"},
+              {"nome": "Sorrento"}, {"nome": "Amalfi"}, {"nome": "Pompei"}
+          ];
+          console.log("Utilizzando comuni di fallback:", comuniData.length);
       });
 
   function filterComuni(input, listElement) {
